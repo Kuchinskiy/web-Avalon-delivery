@@ -25,6 +25,10 @@ a {
 	text-decoration: none;
 }
 
+ul {
+	list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -37,7 +41,7 @@ h6 {
 
 img {
 	display: block;
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 	vertical-align: top;
 }
