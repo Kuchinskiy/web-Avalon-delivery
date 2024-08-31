@@ -14,11 +14,11 @@ body {
 	box-sizing: border-box;
 }
 
-/* a,
+a,
 ::before,
 ::after {
 	display: inline-block;
-} */
+}
 
 a {
 	color: inherit;

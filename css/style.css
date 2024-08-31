@@ -200,6 +200,7 @@
 	width: 260px;
 	height: 1px;
 	background-color: rgb(229, 229, 229);
+	margin-bottom: 120px;
 }
 
 .content-side__title {
@@ -230,6 +231,11 @@
 .content-side__list-item--desc {
 	font-weight: 400;
 }
+
+/* Sidebar FOOTER */
+.content-side__footer {}
+
+.content-side__footer-link {}
 
 
 
