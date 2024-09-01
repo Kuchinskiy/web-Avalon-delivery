@@ -38,7 +38,12 @@
 }
 
 /* Header button controls */
+.header-controls {
+	display: flex;
+}
+
 .btn {
+	display: block;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
@@ -54,9 +59,19 @@
 	margin-right: 10px;
 }
 
+.btn-outline:hover {
+	background-color: rgb(37, 110, 235);
+	color: rgb(255, 255, 255);
+}
+
 .btn-primary {
 	color: rgb(255, 255, 255);
 	background-color: rgb(37, 110, 235);
+	transition: transform 1s;
+}
+
+.header-controls .btn-primary:hover {
+	transform: scale(1.05);
 }
 
 /* Header burger for mobile */
