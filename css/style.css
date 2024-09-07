@@ -48,7 +48,7 @@
 }
 
 .btn {
-	display: block;
+	display: inline-flex;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
@@ -109,18 +109,12 @@
 	outline: none;
 }
 
-.search-btn {
-	display: flex;
-	align-items: center;
-}
-
-.search-btn .search-btn__icon {
+.icon-btn::before {
+	content: "";
 	width: 15px;
 	height: 15px;
-}
-
-.search-btn .search-btn__text {
-	margin-left: 2px;
+	background-image: url(../images/search-icon.svg);
+	margin-right: 5px;
 }
 
 /* Main content -- Section cards */
