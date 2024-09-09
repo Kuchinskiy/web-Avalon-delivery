@@ -196,7 +196,7 @@
 	width: 260px;
 	height: 1px;
 	background-color: rgb(229, 229, 229);
-	margin-bottom: 175px;
+	margin-bottom: 135px;
 }
 
 .content-side__title {
@@ -242,6 +242,31 @@
 	text-decoration: underline;
 	margin-bottom: 8px;
 }
+
+/* Social media*/
+.icon {
+	margin: 5px;
+}
+
+.icon-insta {
+	padding: 3px;
+}
+
+.icon-facebook:hover {
+	fill: #4460A0;
+}
+
+.icon-twitter:hover {
+	fill: #1DA1F2;
+}
+
+.icon-insta:hover {
+	fill: #C13584;
+}
+
+
+
+
 
 
 /* ============================================= */
