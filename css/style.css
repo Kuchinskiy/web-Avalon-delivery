@@ -1,8 +1,8 @@
 @import url('null.css');
 
 :root {
-	--page-btn-title-color: rgb(37, 110, 235);
-	--btn-text-color: rgb(255, 255, 255);
+	--page-btn-title-color: #256eeb;
+	--btn-text-color: #ffffff;
 }
 
 
@@ -35,9 +35,8 @@
 }
 
 .header-logo h1 {
-	font-weight: 700;
 	font-size: 24px;
-	line-height: 28px;
+	line-height: 1.7;
 	color: rgb(10, 20, 58);
 	margin-left: 6px;
 }
@@ -51,7 +50,6 @@
 	display: inline-flex;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 16px;
 
 	padding: 10px 15px;
 	border-radius: 5px;
@@ -137,8 +135,7 @@
 
 .content-main__title {
 	font-size: 24px;
-	font-weight: 700;
-	line-height: 28px;
+	line-height: 1.7;
 	margin-bottom: 25px;
 }
 
@@ -162,13 +159,12 @@
 }
 
 .content-main__list-item--title{
-	font-weight: 700;
 	color: var(--page-btn-title-color);
 	margin-bottom: 5px;
 }
 
 .content-main__list-item:hover {
-	color: rgb(255, 0, 0);
+	color: #ff0000;
 }
 
 .content-main__list-item--price{
@@ -177,7 +173,6 @@
 
 .content-main__list-item--desc{
 	font-size: 14px;
-	line-height: 16px;
 	font-weight: 400;
 	color: rgb(196, 196, 196);
 }
@@ -201,8 +196,7 @@
 
 .content-side__title {
 	font-size: 18px;
-	line-height: 21px;
-	font-weight: 700;
+	line-height: 1.7;
 	margin-bottom: 15px;
 }
 
@@ -219,8 +213,6 @@
 .content-side__list-item--title,
 .content-side__list-item--desc {
 	font-size: 14px;
-	line-height: 16px;
-	font-weight: 700;
 	margin-bottom: 5px;
 }
 
@@ -230,8 +222,8 @@
 
 /* Sidebar FOOTER */
 .footer {
+	font-weight: 400;
 	font-size: 14px;
-	line-height: 16px;
 	color: rgb(196, 196, 196);
 }
 .content-side__footer {
@@ -263,10 +255,6 @@
 .icon-insta:hover {
 	fill: #C13584;
 }
-
-
-
-
 
 
 /* ============================================= */
