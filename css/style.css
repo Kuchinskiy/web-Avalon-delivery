@@ -164,7 +164,8 @@
 	opacity: 0;
 }
 
-.content-main__thumb:hover::before {
+.content-main__list-item:hover 
+.content-main__thumb::before {
 	opacity: 1;
 }
 
