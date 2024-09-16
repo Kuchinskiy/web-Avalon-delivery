@@ -37,7 +37,7 @@
 .header-logo h1 {
 	font-size: 24px;
 	line-height: 1.7;
-	color: rgb(10, 20, 58);
+	color: #0a143a;
 	margin-left: 6px;
 }
 
@@ -62,7 +62,7 @@
 	margin-right: 10px;
 }
 
-.btn-outline:hover {
+.btn-outline:is(:focus, :hover) {
 	background-color: var(--page-btn-title-color);
 	color: var(--btn-text-color);
 }
@@ -73,7 +73,7 @@
 	transition: transform 1s;
 }
 
-.header-controls .btn-primary:hover {
+.header-controls .btn-primary:is(:focus, :hover) {
 	transform: scale(1.05);
 }
 
@@ -160,19 +160,24 @@
 	width: 100%;
 	height: 100%;
 	background-color: rgba(255, 165, 0, 0.5);
+	border-radius: 10px;
 
-	opacity: 0;
+/* Animation overlay card */
+	transform: translatey(-100%);
+	transition: transform 250ms ease-in-out;
+
+	/* opacity: 0; */
 }
 
 .content-main__list-item:hover 
 .content-main__thumb::before {
-	opacity: 1;
+	transform: translatey(0);
+	/* opacity: 1; */
 }
 
 .content-main__action {
 	display: flex;
 	position: absolute;
-	/* outline: 3px solid orange; */
 
 	top: 50%;
 	left: 50%;
@@ -194,96 +199,23 @@
 	background: transparent;
 }
 
+.button-icon.heart:is(:focus, :hover) {
+	transform: scale(1.3);
+}
+
+.button-icon.home:is(:focus, :hover) {
+	transform: scale(1.3);
+}
+
+.button-icon.edit:is(:focus, :hover) {
+	transform: scale(1.3);
+}
+
 .content-main__action .svg-icon {
 	width: 32px;
 	height: 32px;
 }
 
-
-/* ========================================== */
-
-.product {
-	width: 370px;
- 
-	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-	  0px 1px 3px rgba(0, 0, 0, 0.12);
- }
- 
- .product:hover .product-actions {
-	opacity: 1;
- }
- 
- .product-thumb:hover::before {
-	opacity: 1;
- }
- 
- .product-thumb {
-	position: relative;
- }
- 
- .product-thumb::before {
-	display: inline-block;
-	content: "";
- 
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(255, 165, 0, 0.5);
- 
-	opacity: 0;
- }
- 
- .product-meta {
-	padding: 15px;
- }
- 
- .product-name {
-	margin-top: 0;
-	margin-bottom: 10px;
- }
- 
- .product-price {
-	margin-top: 0;
-	margin-bottom: 0;
- }
- 
- .product-actions {
-	outline: 3px solid orange;
-	position: absolute;
- 
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	display: flex;
- 
-	/* Opacity анимируемое свойство, используйте вместо diplay none */
-	opacity: 0;
- }
- 
- .product-actions .icon {
-	width: 32px;
-	height: 32px;
- }
- 
- .box-1 {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 30px;
-	height: 30px;
-	background-color: red;
- }
- 
- .box-2 {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 40px;
-	height: 40px;
-	background-color: green;
- }
 /* Markup cards */
 .content-main__list-item-group {
 	padding: 15px;
@@ -392,7 +324,6 @@
 .icon-insta:hover {
 	fill: #C13584;
 }
-
 
 /* ============================================= */
 
