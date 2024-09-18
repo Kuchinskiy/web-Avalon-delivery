@@ -17,7 +17,7 @@
 					<h1>Avalon</h1>
 				</div>
 				<div class="header-controls">
-					<button class="btn btn-outline">Вход и регистрация</button>
+					<button class="btn btn-outline" data-open-modal>Вход и регистрация</button>
 					<button class="btn btn-primary">Подать объявление</button>
 				</div>
 				<!-- Burger for Mobile -->
@@ -26,8 +26,15 @@
 				</div>
 			</div>
 		</div>
+		<!-- Modal windows -->
+		<div class="backdrop is-hidden" data-backdrop">
+			<div class="modal">
+				<input type="text">
+				<button class="modal-btn" data-close-modal>Close</button>
+			</div>
+		</div>
 	</header>
-	
+
 	<main class="content">
 <!-- Section search -->
 		<section class="search">
@@ -53,7 +60,7 @@
 								<li class="content-main__list-item">
 									<a href="#" class="content-main__list-link">
 										<div class="content-main__thumb">
-											<img class="content-main__list-item--img" width="264" src="./images/card.png" alt="card">
+											<img class="content-main__list-item--img" width="264" src="./images/card.jpeg" alt="card">
 											<div class="content-main__action">
 												<button class="button-icon heart" aria-label="В избраное" type="button">
 													<svg class="svg-icon">
@@ -87,7 +94,7 @@
 								<li class="content-main__list-item">
 									<a href="#" class="content-main__list-link">
 										<div class="content-main__thumb">
-											<img class="content-main__list-item--img" width="264" src="./images/card.png" alt="card">
+											<img class="content-main__list-item--img" width="264" src="./images/card.jpeg" alt="card">
 											<div class="content-main__action">
 												<button class="button-icon heart" aria-label="В избраное" type="button">
 													<svg class="svg-icon">
@@ -121,7 +128,7 @@
 								<li class="content-main__list-item">
 									<a href="#" class="content-main__list-link">
 										<div class="content-main__thumb">
-											<img class="content-main__list-item--img" width="264" src="./images/card.png" alt="card">
+											<img class="content-main__list-item--img" width="264" src="./images/card.jpeg" alt="card">
 											<div class="content-main__action">
 												<button class="button-icon heart" aria-label="В избраное" type="button">
 													<svg class="svg-icon">
@@ -155,7 +162,7 @@
 								<li class="content-main__list-item">
 									<a href="#" class="content-main__list-link">
 										<div class="content-main__thumb">
-											<img class="content-main__list-item--img" width="264" src="./images/card.png" alt="card">
+											<img class="content-main__list-item--img" width="264" src="./images/card.jpeg" alt="card">
 											<div class="content-main__action">
 												<button class="button-icon heart" aria-label="В избраное" type="button">
 													<svg class="svg-icon">
@@ -189,7 +196,7 @@
 								<li class="content-main__list-item">
 									<a href="#" class="content-main__list-link">
 										<div class="content-main__thumb">
-											<img class="content-main__list-item--img" width="264" src="./images/card.png" alt="card">
+											<img class="content-main__list-item--img" width="264" src="./images/card.jpeg" alt="card">
 											<div class="content-main__action">
 												<button class="button-icon heart" aria-label="В избраное" type="button">
 													<svg class="svg-icon">
@@ -223,7 +230,7 @@
 								<li class="content-main__list-item">
 									<a href="#" class="content-main__list-link">
 										<div class="content-main__thumb">
-											<img class="content-main__list-item--img" width="264" src="./images/card.png" alt="card">
+											<img class="content-main__list-item--img" width="264" src="./images/card.jpeg" alt="card">
 											<div class="content-main__action">
 												<button class="button-icon heart" aria-label="В избраное" type="button">
 													<svg class="svg-icon">
@@ -320,5 +327,26 @@
 			</div>
 		</section>
 	</main>
+
+	<script>
+      const refs = {
+         openModalBtn: document.querySelector("[data-open-modal]"),
+         closeModalBtn: document.querySelector("[data-close-modal]"),
+         backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      refs.backdrop.addEventListener("click", logBackdropClick);
+
+      function toggleModal() {
+         refs.backdrop.classList.toggle("is-hidden");
+      }
+
+      function logBackdropClick() {
+         console.log("Это клик в бекдроп");
+      }
+      </script>
 </body>
 </html>
