@@ -70,7 +70,7 @@
 .btn-primary {
 	color: var(--btn-text-color);
 	background-color: var(--page-btn-title-color);
-	transition: transform 1s;
+	transition: transform 250ms ease-in-out;
 }
 
 .header-controls .btn-primary:is(:focus, :hover) {
@@ -80,9 +80,9 @@
 /* Modal window */
 .backdrop {
 	position: fixed;
-	z-index: 1;
 	top:0;
 	left: 0;
+	z-index: 1;
 
 	width: 100%;
 	height: 100%;
@@ -90,7 +90,7 @@
 }
 
 .backdrop.is-hidden {
-	/* opacity: 0; */
+	opacity: 0;
 	pointer-events: none;
 }
 

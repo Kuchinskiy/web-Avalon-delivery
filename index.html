@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="./css/style.css">
 	<title>Avalon</title>
 </head>
+
 <body>
 	<header class="header">
 		<div class="container">
@@ -27,7 +28,7 @@
 			</div>
 		</div>
 		<!-- Modal windows -->
-		<div class="backdrop is-hidden" data-backdrop">
+		<div class="backdrop is-hidden" data-backdrop>
 			<div class="modal">
 				<input type="text">
 				<button class="modal-btn" data-close-modal>Close</button>
@@ -328,25 +329,7 @@
 		</section>
 	</main>
 
-	<script>
-      const refs = {
-         openModalBtn: document.querySelector("[data-open-modal]"),
-         closeModalBtn: document.querySelector("[data-close-modal]"),
-         backdrop: document.querySelector("[data-backdrop]"),
-      };
 
-      refs.openModalBtn.addEventListener("click", toggleModal);
-      refs.closeModalBtn.addEventListener("click", toggleModal);
-
-      refs.backdrop.addEventListener("click", logBackdropClick);
-
-      function toggleModal() {
-         refs.backdrop.classList.toggle("is-hidden");
-      }
-
-      function logBackdropClick() {
-         console.log("Это клик в бекдроп");
-      }
-      </script>
+		<script src="./modal.js"></script>
 </body>
 </html>
