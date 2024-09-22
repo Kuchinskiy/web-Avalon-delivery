@@ -30,8 +30,30 @@
 		<!-- Modal windows -->
 		<div class="backdrop is-hidden" data-backdrop>
 			<div class="modal">
-				<input type="text">
-				<button class="modal-btn" data-close-modal>Close</button>
+				<form>
+					<div role="group" class="modal-group">
+						<h2 class="modal-title">Вкажіть свої дані для завершення реєстрації</h2>
+						<ul class="modal-list">
+							<li class="modal-item">
+								<label class="modal-lable" for="name">Ім`я</label>
+								<input class="modal-input" type="text" id="name" placeholder="Вкажіть своє ім`я" autofocus>
+							</li>
+							<li class="modal-item">
+								<label class="modal-lable" for="tel">Телефон</label>
+								<input class="modal-input" type="tel" id="tel" placeholder="+380 000-00-00">
+							</li>
+							<li class="modal-item">
+								<label class="modal-lable" class="modal-lable" for="email">Пошта</label>
+								<input class="modal-input" type="email" id="email" placeholder="qwerty@gmail.com">
+							</li>
+							<li class="modal-item">
+								<label class="modal-lable" for="comment">Коментар</label>
+								<input type="text">
+							</li>
+						</ul>
+					</div>
+				</form>
+				<button class="btn btn-primary modal-btn" data-close-modal>Відправити</button>
 			</div>
 		</div>
 	</header>
