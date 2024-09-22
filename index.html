@@ -36,19 +36,33 @@
 						<ul class="modal-list">
 							<li class="modal-item">
 								<label class="modal-lable" for="name">Ім`я</label>
-								<input class="modal-input" type="text" id="name" placeholder="Вкажіть своє ім`я" autofocus>
+								<input class="modal-input" type="text" id="name" placeholder="Alex Jacobovych" autofocus>
+								<svg class="modal-svg">
+									<use href="./images/sprite.svg/symbol-modal-icon.svg#icon-man"></use>
+								</svg>
 							</li>
 							<li class="modal-item">
 								<label class="modal-lable" for="tel">Телефон</label>
 								<input class="modal-input" type="tel" id="tel" placeholder="+380 000-00-00">
+								<svg class="modal-svg">
+									<use href="./images/sprite.svg/symbol-modal-icon.svg#icon-phone"></use>
+								</svg>
 							</li>
 							<li class="modal-item">
 								<label class="modal-lable" class="modal-lable" for="email">Пошта</label>
 								<input class="modal-input" type="email" id="email" placeholder="qwerty@gmail.com">
+								<svg class="modal-svg">
+									<use href="./images/sprite.svg/symbol-modal-icon.svg#icon-email"></use>
+								</svg>
 							</li>
 							<li class="modal-item">
 								<label class="modal-lable" for="comment">Коментар</label>
-								<input type="text">
+								<textarea class="modal-textarea" name="feedback" id="" rows="5" placeholder="Enter your message here..."></textarea>
+							</li>
+							<li>
+								<input class="modal-input" type="checkbox" id="accept">
+								<label class="modal-accept" for="accept">Погоджуюся з розсилкою та приймаю</label>
+								<a href="#">Умови договору</a>
 							</li>
 						</ul>
 					</div>
