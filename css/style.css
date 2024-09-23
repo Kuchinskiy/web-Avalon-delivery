@@ -111,6 +111,7 @@
 .modal-title {
 	font-size: 20px;
 	text-align: center;
+	margin-top: 35px;
 	margin-bottom: 10px;
 	color: rgba(33, 33, 33, 1);
 }
@@ -152,8 +153,12 @@
 	height: 18px;
 }
 
-.modal-input:focus + .modal-svg {
-	fill: #1DA1F2;
+.modal-input:is(:focus, :hover) + .modal-svg {
+	fill: #2196f3;
+}
+
+.modal-input:is(:focus, :hover) {
+	border: 1px solid rgba(33, 150, 243, 1);
 }
 
 .modal-textarea {
@@ -218,7 +223,7 @@
 
 .modal-checkbox:checked + .modal-icon {
 	border-color: transparent;
-	background-color: var(--page-btn-title-color);
+	background-color: #2196f3;
 	background-image: url('../images/check.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -230,7 +235,7 @@
 } */
 
 .modal-link {
-	color: var(--page-btn-title-color);
+	color: #2196f3;
 	text-decoration-line: underline;
 }
 
@@ -249,6 +254,10 @@
 }
 
 .modal-btn-close {
+	position: absolute;
+	top: 20px;
+	left: 92%;
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -258,6 +267,12 @@
 	border-radius: 50%;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	background-color: transparent;
+
+	cursor: pointer;
+}
+
+.modal-btn-close:is(:focus, :hover) {
+	fill: #2196f3;
 }
 
 .close-btn-svg {
