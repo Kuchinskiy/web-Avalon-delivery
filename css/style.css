@@ -320,7 +320,6 @@
 }
 
 /* Main content -- Section cards */
-
 .content-box {
 	display: flex;
 	gap: 30px;
@@ -332,6 +331,63 @@
 	flex-grow: 1;
 	margin-bottom: 70px;
 }
+
+/* Page product.html -- main section -- add style*/
+.content {
+	padding-bottom: 50px;
+}
+
+.content-box-product {
+	display: flex;
+	gap: 130px;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+
+.content-main-product--name {
+	display: flex;
+	max-width: 580px;
+	align-items: center;
+	color: #0A143A;
+	justify-content: space-between;
+}
+
+.content-main-product--price {
+	font-size: 24px;
+	line-height: 1.2;
+	margin-bottom: 25px;
+}
+
+.content-main {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	gap: 30px;
+}
+
+.btn-show-mobile {
+	display: block;
+	width: 264px;
+	height: 54px;
+
+	text-align: center;
+	color: #ffffff;
+	background-color: var(--page-btn-title-color);
+}
+
+.content-main__product--text {
+	max-width: 460px;
+}
+
+.content-main__product--desc {
+	color: #0A143A;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+
+/* ======================================================== */
 
 .content-side {
 	min-width: 260px;

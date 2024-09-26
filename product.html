@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Product</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-box">
+				<div class="header-logo">
+					<img src="./images/box _logo.svg" alt="logo">
+					<h1>Avalon</h1>
+				</div>
+				<div class="header-controls">
+					<button class="btn btn-outline">Вход и регистрация</button>
+					<button class="btn btn-primary">Подать объявление</button>
+				</div>
+				<!-- Burger for Mobile -->
+				<div class="header-burger">
+					<img src="./images/menu-burger.svg" alt="burger">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="content">
+		<!-- Section search -->
+		<section class="search">
+			<div class="container">
+				<div class="search-box">
+						<input type="text" name="search" placeholder="Поиск по объявлениям" autofocus/>
+						<button type="submit" class="btn btn-primary search-btn icon-btn">
+							<span class="search-btn__text">Search</span>
+						</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="content">
+			<div class="container">
+				<div class="content-box-product">
+					<div class="content-main-wrapper">
+						<div class="content-main-product--name">
+							<h2 class="content-main__title">Электросамокат Kugoo Gx</h2>
+							<p class="content-main-product--price"><strong>65 000 &#8372</strong></p>
+						</div>
+
+						<a href="#" class="content-main__list-link">
+							<div class="content-main">
+								<img class="content-main__item-img" width="460" src="./images/product.jpeg" alt="scooter">
+								<button class="btn btn-show-mobile">Показать телефон</button>
+							</div>
+
+							<div class="content-main__product--text">
+								<p class="content-main__product--desc">
+									Продаю не спеша самокат в хорошем состоянии.
+									Торг возможен.
+									За период эксплуатации не выявлено ни одной проблемы.
+									Из минусов — нужно прокачать задний тормоз.
+									Установлен отсекатель сзади.
+									Покрышки CST внедорожные.
+									Все на подшипниках, болты протянуты.
+									Пробег 881км , это немного для такого зверя.</p>
+							</div>
+						</a>
+					</div>
+
+					<!-- Sidebar -->
+					<div class="content-side">
+						<h2 class="content-side__title">Сервисы и услуги</h2>
+						<div class="content-side__box">
+							<div class="content-side__list">
+								<ul>
+									<li class="content-side__list-item">
+										<svg width="32" height="32">
+											<use href="./images/sprite.svg/symbol-defs.svg#icon-delivery-truck"></use>
+										</svg>
+										<!-- <img class="content-side__list-item--img" src="./images/delivery-truck-icon.svg" alt="icon_car-truck"> -->
+										<h4 class="content-side__list-item--title">Доставка</h4>
+										<p class="content-side__list-item--desc">Проверка при получении и возможность бесплатно вернуть товар</p>
+									</li>
+
+									<li class="content-side__list-item">
+										<svg width="32" height="32">
+											<use href="./images/sprite.svg/symbol-defs.svg#icon-delivery-sedan"></use>
+										</svg>
+										<!-- <img class="content-side__list-item--img" src="./images/delivery-sedan-icon.svg" alt="icon_car-sedan"> -->
+										<h4 class="content-side__list-item--title">Автотека</h4>
+										<p class="content-side__list-item--desc">Отчёт с историей авто: пробег, владельцы, сведения о залоге, ДТП и ремонтах</p>
+									</li>
+
+									<li class="content-side__list-item">
+										<svg width="32" height="32">
+											<use href="./images/sprite.svg/symbol-defs.svg#icon-delivery-home"></use>
+										</svg>
+										<!-- <img class="content-side__list-item--img" src="./images/delivery-home-icon.svg" alt="icon_delivery-home"> -->
+										<h4 class="content-side__list-item--title">Онлайн-бронирование жилья</h4>
+										<p class="content-side__list-item--desc">Посуточная аренда квартир и домов: большой выбор вариантов для поездок по Украине</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="content-side__decor-element"></div>
+<!-- Footer in sidebar -->
+						<footer class="footer">
+							<a href="#" class="social-item">
+								<svg class="icon icon-facebook" width="32" height="32">
+									<use href="./images/sprite.svg/symbol-defs.svg#icon-facebook"></use>
+								</svg>
+							</a>
+
+							<a href="#" class="social-item">
+								<svg class="icon icon-twitter" width="32" height="32">
+									<use href="./images/sprite.svg/symbol-defs.svg#icon-twitter"></use>
+								</svg>
+							</a>
+
+							<a href="#" class="social-item">
+								<svg class="icon icon-insta" width="32" height="32">
+									<use href="./images/sprite.svg/symbol-defs.svg#icon-instagram"></use>
+								</svg>
+							</a>
+							<p class="content-side__footer">&#169 ООО «Авалон», 2021–2024</p>
+							<a href="#" class="content-side__footer-link">Политика конфиденциальности</a>
+							<a href="#" class="content-side__footer-link">Обработка данных</a>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
